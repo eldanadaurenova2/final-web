@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light text-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item mx-5">
+                        <a href="#section1" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a href="aboutus.html" class="nav-link">О Нас</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a href="keys.html" class="nav-link">Кейсы</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a href="task.html" class="nav-link">Задачи</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a href="carousel.html" class="nav-link">Карусель</a>
+                    </li>
+                     <li class="nav-item mx-5">
+                        <a href="photo.html" class="nav-link">Анимация</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a href="highcharts.html" class="nav-link">Графики</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content text-center">
+        <h1 class="display-1">Create</h1>
+        <h2 class="display-4">comfort.</h2>
+    </div>
+</header>
+
+<main>
+    <div class="container mt-5">
+        <!-- Login/Registration Section -->
+        <div id="auth">
+            <h2 class="text-center">Вход / Регистрация</h2>
+            <form id="authForm">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Имя пользователя</label>
+                    <input type="text" id="username" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password" id="password" class="form-control" required>
+                </div>
+                <button type="button" id="loginBtn" class="btn btn-primary">Войти</button>
+                <button type="button" id="registerBtn" class="btn btn-secondary">Регистрация</button>
+            </form>
+        </div>
+
+        <!-- Profile Section -->
+        <div id="profile" class="d-none">
+            <h2 class="text-center">Ваш профиль</h2>
+            <p>Имя пользователя: <span id="profileUsername"></span></p>
+            <button id="logoutBtn" class="btn btn-danger">Выйти</button>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-grey text-light py-5 bg-black">
+    <div class="container d-flex justify-content-between">
+        <div>
+            <span class="logo fs-4 fw-bold">CREATE COMFORT</span>
+            <p>Your guide to the world of design</p>
+        </div>
+        <div>
+            <h4>About Us</h4>
+            <ul class="list-unstyled">
+                <li>Portfolio</li>
+                <li>Reviews</li>
+                <li>Keys</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact Us</h4>
+            <p>Astana, Kazakhstan</p>
+            <p>+7 705 622 6140</p>
+        </div>
+    </div>
+    <hr>
+    <p class="text-center">Made by Daurenova Eldana</p>
+</footer>
+
+<script src="auth.js"></script>
+</body>
+</html>

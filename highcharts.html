@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайн Интерьера</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .info-section {
+            padding: 50px 0;
+        }
+
+        .chart-container {
+            margin: 50px 0;
+            padding: 20px;
+            border: 1px solid #444;
+            border-radius: 10px;
+            background-color: #1a1a1a;
+        }
+
+        .chart-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #chart {
+            width: 100%;
+            height: 400px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 50px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #444;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-event {
+            position: relative;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #1a1a1a;
+            width: 45%;
+        }
+
+        .timeline-event.left {
+            left: 0;
+        }
+
+        .timeline-event.right {
+            left: 55%;
+        }
+
+        .timeline-event::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ff6f61;
+            border-radius: 50%;
+            top: 20px;
+            left: -30px;
+        }
+
+        .timeline-event.right::before {
+            left: auto;
+            right: -30px;
+        }
+
+        .timeline-event h3 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .timeline-event p {
+            font-size: 16px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light text-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item mx-5"><a href="design.html" class="nav-link text-white">Главная</a></li>
+                    <li class="nav-item mx-5"><a href="aboutus.html" class="nav-link text-white">О Нас</a></li>
+                    <li class="nav-item mx-5"><a href="keys.html" class="nav-link text-white">Кейсы</a></li>
+                    <li class="nav-item mx-5"><a href="tasks.html" class="nav-link text-white">Задачи</a></li>
+                    <li class="nav-item mx-5"><a href="photo.html" class="nav-link text-white">Анимация</a></li>
+                    <li class="nav-item mx-5"><a href="highcharts.html" class="nav-link text-white">Графики</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="container chart-container">
+    <h2>Проекты по дизайну интерьера</h2>
+    <div id="chart"></div>
+</div>
+
+
+<div class="container info-section">
+    <h2 class="text-center mb-5">История Дизайна Интерьера</h2>
+    <div class="timeline">
+        <div class="timeline-event left" data-aos="fade-right">
+            <h3>2000</h3>
+            <p>Начало работы компании, фокус на жилых интерьерах.</p>
+        </div>
+        <div class="timeline-event right" data-aos="fade-left">
+            <h3>2005</h3>
+            <p>Добавление коммерческих проектов, включая офисные помещения.</p>
+        </div>
+        <div class="timeline-event left" data-aos="fade-right">
+            <h3>2010</h3>
+            <p>Расширение услуг: дизайн ванных комнат и кухонь.</p>
+        </div>
+        <div class="timeline-event right" data-aos="fade-left">
+            <h3>2015</h3>
+            <p>Открытие первого международного филиала в Европе.</p>
+        </div>
+        <div class="timeline-event left" data-aos="fade-right">
+            <h3>2020</h3>
+            <p>Запуск онлайн-сервиса для разработки проектов удаленно.</p>
+        </div>
+        <div class="timeline-event right" data-aos="fade-left">
+            <h3>2023</h3>
+            <p>Более 1000 завершенных проектов, лидерство на рынке.</p>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-black text-light py-5">
+    <div class="container d-flex justify-content-between">
+        <div>
+            <span class="logo fs-4 fw-bold">CREATE COMFORT</span>
+            <p>Your guide to the world of design</p>
+        </div>
+        <div>
+            <h4>About Us</h4>
+            <ul class="list-unstyled">
+                <li>Portfolio</li>
+                <li>Reviews</li>
+                <li>Keys</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact Us</h4>
+            <p>Astana, Kazakhstan</p>
+            <p>+7 705 622 6140</p>
+        </div>
+    </div>
+    <hr>
+    <p class="text-center">Made by Daurenova Eldana</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script>
+
+    AOS.init();
+
+
+    Highcharts.chart('chart', {
+        chart: {
+            type: 'column',
+            backgroundColor: '#1a1a1a'
+        },
+        title: {
+            text: 'Распределение завершенных проектов',
+            style: {
+                color: '#fff',
+                fontSize: '20px'
+            }
+        },
+        xAxis: {
+            categories: ['Гостиные', 'Кухни', 'Спальни', 'Ванные', 'Офисы'],
+            title: {
+                text: 'Категории'
+            },
+            labels: {
+                style: {
+                    color: '#fff'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Количество проектов',
+                style: {
+                    color: '#fff'
+                }
+            },
+            labels: {
+                style: {
+                    color: '#fff'
+                }
+            }
+        },
+        series: [{
+            name: '2023',
+            data: [12, 15, 10, 8, 5],
+            color: '#ff6f61'
+        }, {
+            name: '2024',
+            data: [14, 18, 12, 10, 7],
+            color: '#1f78b4'
+        }],
+        legend: {
+            itemStyle: {
+                color: '#fff'
+            }
+        }
+    });
+</script>
+</body>
+</html>
